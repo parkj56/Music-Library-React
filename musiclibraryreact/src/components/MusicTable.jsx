@@ -1,6 +1,6 @@
 import './MusicTable.css'
 import React, {useState} from 'react'
-import EditSong from '../EditSong/EditSong.jsx';
+import EditSong from './EditSong';
 
 function MusicTable(props) {
 

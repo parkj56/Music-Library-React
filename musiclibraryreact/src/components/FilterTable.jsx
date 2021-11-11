@@ -1,4 +1,4 @@
-import './FilterTable.css'
+
 import React from 'react';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';

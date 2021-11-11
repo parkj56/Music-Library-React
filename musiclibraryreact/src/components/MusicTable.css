@@ -1,15 +1,15 @@
 .musicTable tr, table {
     text-align: center;
-    border: 1px solid black !important;
+    border: 1px solid rgb(56, 54, 54) !important;
 }
 
 .musicTable tr:hover {
-    background-color: rgb(187, 186, 186);
+    background-color: rgb(167, 112, 112);
 }
 
 tr:nth-child(even) {
-    background-color: rgb(117, 161, 255);
-    color: rgb(0, 0, 0)
+    background-color: rgb(111, 138, 196);
+    color: rgb(87, 20, 20)
 }
 
 tr:nth-child(even):hover {
