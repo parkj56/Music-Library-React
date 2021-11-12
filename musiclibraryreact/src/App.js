@@ -26,7 +26,7 @@ class App extends Component {
 
   async createSong(newSong) {
     try{
-        await axios.post('http://127.0.0.1:8000/music/', newSong)
+        await axios.post('http://127.0.0.1:8000/music_library/', newSong)
         this.getAllSongs()
     }catch (er) {
         console.log("Error in Post Call")
@@ -34,7 +34,7 @@ class App extends Component {
   }
   deleteSong= async(song)=> {
     try {
-        await axios.delete(`http://127.0.0.1:8000/music/${song}/`)
+        await axios.delete(`http://127.0.0.1:8000/music_library/${song}/`)
         this.getAllSongs()
     }catch (ex) {
         console.log('Error in API Call')
@@ -45,7 +45,7 @@ class App extends Component {
   updateSong = async(song)=> {
     console.log('Made it here')
     try{
-      await axios.put(`http://127.0.0.1:8000/music/${song.id}/`, song)
+      await axios.put(`http://127.0.0.1:8000/music_library/${song.id}/`, song)
       this.getAllSongs()
     }catch(ex) {
       console.log('Error in put request')
